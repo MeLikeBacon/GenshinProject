@@ -1,0 +1,2 @@
+# GenshinProject
+personal genshin project
