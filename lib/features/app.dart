@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        fontFamily: 'HYWenHei',
         primarySwatch: Colors.deepPurple,
       ),
       home: const MyHomePage(),
