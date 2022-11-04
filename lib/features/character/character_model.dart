@@ -17,7 +17,7 @@ class GenshinCharacterModel extends Entity {
 
   @override
   Map<String, dynamic> toMap() {
-    return {'charId': charId, 'charName': charName, 'bannerName': bannerName, 'numSince': numSince};
+    return {'id': charId, 'chname': charName, 'banname': bannerName, 'nsince': numSince};
   }
 
   factory GenshinCharacterModel.fromJson(Map<String, dynamic> json) {

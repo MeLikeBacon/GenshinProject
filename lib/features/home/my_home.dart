@@ -10,7 +10,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  CharacterController _characterController = CharacterController();
+  final CharacterController _characterController = CharacterController();
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +27,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             IconButton(
                 onPressed: () {
-                  GenshinCharacterModel genshinChar =
-                      GenshinCharacterModel(charName: 'Yoimiya', bannerName: 'Tapestry of Golden Flames', numSince: 3);
+                  GenshinCharacterModel genshinChar = GenshinCharacterModel(
+                      charName: 'Yoimiya',
+                      bannerName: 'Tapestry of Golden Flames',
+                      numSince: 3);
                   _characterController.insertCharacter(genshinChar);
                 },
                 icon: const Icon(Icons.add))
